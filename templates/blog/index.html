@@ -1,0 +1,51 @@
+{%extends 'base.html'%}
+
+{%block staticfile%}
+<link rel="stylesheet" href="/static/css/common.css" />
+<link rel="stylesheet" href="/static/css/blog/blog.css" />
+{%endblock%}
+
+{%block main_content%}
+			<div id='block'>
+			</div>
+			<div id='blog_content'>
+			<table class='blogtable'>
+				<tr>
+					<td class='bloglist'>
+						{% for blog in blogs%}
+						<div class="youciblog">
+						   <div class="blog_datetime">
+						   		<ul>
+						   	 	<li class='specialday'>
+						   	 		<span>{{blog.day}}</span>
+						   	 	</li>
+						   	 	</ul>
+						   	  <ul>
+						   	 	<li class="normal">
+						   	 	<span>	{{blog.month}}/{{blog.year}}</span>
+						   	 	</li>
+						   	 	<li class="normal">
+						   	 	 <span>	{{blog.weekday}}</span>
+						   	 	</li>
+						   	 	<li class="normal">
+						   	 	 <span>	{{blog.time}}</span>
+						   	 	</li>
+						   	 </ul>
+						   </div>
+						   <dir class="blog_info">
+						   	   <table>
+						   	   	   <tr class="title">
+						   	   	   	 <p>{{blog.title}}</p>
+						   	   	   </tr>
+						   	   </table>
+						   </dir>
+						</div>
+						{%endfor%}
+					</td>
+					<td class='toollist'>
+						sfsfsdf
+					</td>
+				</tr>
+			</table>
+			</div>
+{%endblock%}

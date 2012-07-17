@@ -1,0 +1,72 @@
+#blog_content{
+	margin: 0;
+	padding: 0;
+	border-left:2px dashed #889933;
+	border-right:3px dashed #889933;
+	border-top: 2px groove #889933;
+	border-bottom: 2px groove #889933;
+	height:1000px;
+	width:944px;
+}
+#block{
+	width:100%;
+	height: 50px;
+	background:#eeeeee;
+	margin: 0;
+	padding: 0;
+}
+.blogtable{
+	padding: 0;
+	margin: 0;
+}
+.bloglist{
+	
+	width:680px;
+}
+.youciblog{
+	width: 100%;
+	height: 200px;
+	margin-bottom:4px;
+	border-bottom: 2px groove #889933;
+	
+}
+.blog_datetime{
+	width:120px;
+	height: 200px;
+	float: left;
+	background: #ddc;
+}
+.blog_info{
+	width:560px;
+	height: 200px;
+	float: left;
+	padding: 0;
+	margin: 0;
+	background: #909090;
+}
+
+.blog_datetime ul{
+	margin: 0;
+	padding: 0;
+}
+.blog_datetime li.normal{
+	list-style-type: none;
+	padding:0;
+	margin:5px;
+	text-align: right;
+	font-size:20px;
+	font-family:Arial;
+	font-style:italic;
+	color:blue;
+}
+.blog_datetime li.specialday{
+	list-style-type: none;
+	padding:0;
+	margin:5px;
+	text-align:center;
+	font-size:80px;
+	font-family:Arial;
+	font-style:italic;
+	color:#000;
+}
+

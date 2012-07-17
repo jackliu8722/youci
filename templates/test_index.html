@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{%block staticfile%}
+<link rel="stylesheet" href="/static/css/common.css" />
+{%endblock%}
+
+{%block main_content%}
+{% include 'welcome.html'%}
+<div div='info'>
+	{% include 'introduction.html'%}
+	{% include 'latest_tendency.html'%}
+</div>
+{%endblock%} 
